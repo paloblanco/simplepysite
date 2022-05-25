@@ -15,7 +15,7 @@ def main():
         try:
             new_name = os.path.basename(mdfile)
             new_name = new_name[:-3] + ".html"
-            md.markdownFromFile(input=mdfile, output=new_name)
+            md.markdownFromFile(input=mdfile, output=new_name, extensions=['tables','attr_list','wikilinks'])
         except Exception as e:
             print(f"Failed on page -{mdfile}- ; Exception was: {e}")
 
