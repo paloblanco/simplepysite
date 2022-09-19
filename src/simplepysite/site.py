@@ -20,7 +20,7 @@ def build_site():
         try:
             new_name = os.path.basename(mdfile)
             new_name = new_name[:-3] + ".html"
-            md.markdownFromFile(input=mdfile, output=new_name, extensions=['tables','attr_list','wikilinks'])
+            md.markdownFromFile(input=mdfile, output=new_name, extensions=['tables','attr_list','wikilinks','fenced_code'])
         except Exception as e:
             print(f"Failed on page -{mdfile}- ; Exception was: {e}")
 
