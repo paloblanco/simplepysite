@@ -1,7 +1,7 @@
 from setuptools import setup
 
 setup(  name='simplepysite',
-        version='0.1.2',
+        version='0.1.3',
         description='Simple static site generator',
         long_description=open('README.md', 'r').read(),
         long_description_content_type='text/markdown',
